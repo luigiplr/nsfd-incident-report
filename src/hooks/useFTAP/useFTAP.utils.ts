@@ -20,7 +20,7 @@ export const parseMessageData = (message: MessageEvent) => {
 }
 
 export const sub = (sendMessage: SendMessage) => {
-    sendMessage(`:sub:${FIREHALL}.wrserver.app.whosresponding.position`)
+    // sendMessage(`:sub:${FIREHALL}.wrserver.app.whosresponding.position`)
     sendMessage(`:sub:${FIREHALL}.wrserver.app.whosresponding.wratposition`)
     sendMessage(`:sub:${FIREHALL}.wrserver.app.whosresponding.wrattrackingstopped`)
     sendMessage(`:sub:${FIREHALL}.wrserver.app.whosresponding.responding2`)

@@ -1,8 +1,11 @@
-export type Firefighter = {
+export type Unit = {
     id: number;
     name: string;
-    colour: string;
-    location: {
+    destination?: {
+        codeName: string
+        displayName: string
+    }
+    location?: {
         id: number;
         title: string;
     };
