@@ -1,9 +1,13 @@
 import type { AppProps } from 'next/app'
-import Script from 'next/script'
+import Layout from '#components/partial/Layout'
+
+import '#styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   )
 }
 

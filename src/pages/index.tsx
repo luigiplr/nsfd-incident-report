@@ -1,22 +1,23 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useEffect, useState } from 'react';
-import useWebSocket, { ReadyState } from 'react-use-websocket';
-import { useFTAP } from '../hooks/useFTAP';
+import { useFTAP } from '#hooks/useFTAP';
 
 const Home: NextPage = () => {
   const FTAP = useFTAP()
 
   return (
-    <div>
-      <Head>
-        <title>NSFD</title>
-      </Head>
-
-      <main>
-        NSFD TEST APP
-      </main>
-    </div>
+    <>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-2xl font-semibold text-gray-900">Current Incidents</h1>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        {/* Replace with your content */}
+        <div className="py-4">
+          <div className="border-4 border-dashed border-gray-200 rounded-lg h-96" />
+        </div>
+        {/* /End replace */}
+      </div>
+    </>
   )
 }
 
